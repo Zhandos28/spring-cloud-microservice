@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account-service/spring-cloud-microservices.account-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/account-service/spring-cloud-microservices.account-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bill-service/spring-cloud-microservices.bill-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bill-service/spring-cloud-microservices.bill-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/deposit-service/spring-cloud-microservices.deposit-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/deposit-service/spring-cloud-microservices.deposit-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service/spring-cloud-microservices.notification-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service/spring-cloud-microservices.notification-service.main.iml" />
+    </modules>
+  </component>
+</project>

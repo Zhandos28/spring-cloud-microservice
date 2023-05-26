@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.3.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
 group 'com.javastart'
@@ -9,11 +11,25 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.javastart.config.ConfigApplication'
+        )
+    }
 }
 
-test {
-    useJUnitPlatform()
+ext {
+    set('springCloudVersion', "Hoxton.SR1")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+dependencies {
+    implementation "org.springframework.cloud:spring-cloud-config-server"
+    implementation "org.springframework.boot:spring-boot-starter-security:2.3.2.RELEASE"
 }
